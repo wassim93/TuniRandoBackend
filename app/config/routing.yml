@@ -1,0 +1,53 @@
+gallerie:
+    resource: "@GallerieBundle/Controller/"
+    type:     rest
+    prefix:   /
+
+t_rando_subscribe:
+    resource: "@TRandoSubscribeBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
+shop:
+    resource: "@ShopBundle/Controller/"
+    type:     rest
+    prefix:   /
+
+
+
+t_rando_posts:
+    resource: "@TRandoPostsBundle/Controller/"
+    type:     rest
+    prefix:   /
+
+
+t_rando_tipsand_tricks:
+    resource: "@TRandoTipsandTricksBundle/Controller/"
+    type:     rest
+    prefix:   /
+
+t_rando_event:
+    resource: "@TRandoEventBundle/Controller/"
+    type:     rest
+    prefix:   /
+
+t_rando_user:
+    resource: "@TRandoUserBundle/Controller/"
+    type:     rest
+    prefix:   /
+    methods: [GET,PUT,POST,DELETE]
+
+t_rando_main:
+    resource: "@TRandoMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+fos_oauth_server_token:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"

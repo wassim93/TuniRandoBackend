@@ -1,0 +1,4 @@
+services:
+#    t_rando_main.example:
+#        class: TRando\MainBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
